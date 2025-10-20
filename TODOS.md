@@ -16,9 +16,9 @@ We first need to define these object properties in Protégé before applying res
 ---
 
 ## Step 1: Human Rules
-- [ ] `Human SubClassOf: Entity and AscensionPath and hasRank some AscensionRank and hasClass some Class and hasAspect some Aspect and hasEnchantment min 1 Enchantment`
-- [ ] `Human SubClassOf: owns some Object`
-- [ ] `Human SubClassOf: owns some Echo`
+- [x] `Human SubClassOf: Entity and AscensionPath and hasRank some AscensionRank and hasClass some Class and hasAspect some Aspect and hasEnchantment min 1 Enchantment`
+- [x] `Human SubClassOf: owns some Object`
+- [x] `Human SubClassOf: owns some Echo`
 
 ### Ascension Rank Enchantments
 - [ ] `Awakened(Hum) SubClassOf: Human and hasEnchantment exactly 2 Enchantment`
@@ -36,7 +36,7 @@ We first need to define these object properties in Protégé before applying res
 ---
 
 ## Step 2: Entity Rules
-- [ ] `Entity SubClassOf: Alterable and hasCore some SoulCoreType`
+- [x] `Entity SubClassOf: Alterable and hasCore some SoulCoreType`
 
 ### Entity Classes by Number of Cores
 - [ ] `Beast SubClassOf: Class and hasCore exactly 1 SoulCoreType`
@@ -50,7 +50,7 @@ We first need to define these object properties in Protégé before applying res
 ---
 
 ## Step 3: Creature Rules (Corruption Path)
-- [ ] `Creature SubClassOf: Entity and CorruptionPath and hasRank some CorruptionRank and hasClass some Class`
+- [x] `Creature SubClassOf: Entity and CorruptionPath and hasRank some CorruptionRank and hasClass some Class`
 
 ### Corruption Rank Enchantments
 - [ ] `Corrupted SubClassOf: Creature and hasEnchantment exactly 4 Enchantment`
@@ -64,28 +64,28 @@ We first need to define these object properties in Protégé before applying res
 ---
 
 ## Step 4: Echo Rules (Ascension Path)
-- [ ] `Echo SubClassOf: Entity and AscensionPath and hasRank some AscensionRank and hasClass some Class and hasOwner some Human`
+- [x] `Echo SubClassOf: Entity and AscensionPath and hasRank some AscensionRank and hasClass some Class and hasOwner some Human`
 
 ---
 
 ## Step 5: Object Rules
-- [ ] `Object SubClassOf: Alterable and hasRank some AscensionRank and hasEnchantment some Enchantment`
-- [ ] `Armor SubClassOf: Object`
-- [ ] `Weapon SubClassOf: Object`
-- [ ] `Utility SubClassOf: Object`
-- [ ] `Armor DisjointWith: Weapon, Utility`
-- [ ] `Weapon DisjointWith: Utility`
+- [x] `Object SubClassOf: Alterable and hasRank some AscensionRank and hasEnchantment some Enchantment`
+- [x] `Armor SubClassOf: Object`
+- [x] `Weapon SubClassOf: Object`
+- [x] `Utility SubClassOf: Object`
+- [x] `Armor DisjointWith: Weapon, Utility`
+- [x] `Weapon DisjointWith: Utility`
 
 ---
 
 ## Step 6: Aspect & Enchantment Rules
-- [ ] `Aspect SubClassOf: Alterable and hasRank some AscensionRank`
-- [ ] `Enchantment SubClassOf: Alterable`
+- [x] `Aspect SubClassOf: Alterable and hasRank some AscensionRank`
+- [x] `Enchantment SubClassOf: Alterable`
 
 ---
 
 ## Step 7: Rank Rules
-- [ ] `Rank SubClassOf: Immutable`
+- [x] `Rank SubClassOf: Immutable`
 
 ### Ascension Ranks
 - [ ] `Awakened(Asc) SubClassOf: Rank and hasEnchantment exactly 2 Enchantment`
@@ -104,12 +104,12 @@ We first need to define these object properties in Protégé before applying res
 ---
 
 ## Step 8: Disjointness Rules
-- [ ] `Alterable DisjointWith: Immutable`
-- [ ] `Ascension DisjointWith: Corruption, Mundane`
-- [ ] `Aspect DisjointWith: Enchantment, Entity, Object`
-- [ ] `Beast DisjointWith: Demon, Devil, Monster, Terror, Titan, Tyrant`
-- [ ] `Class DisjointWith: Rank, SoulCoresType`
-- [ ] `Corrupted DisjointWith: Cursed, Fallen, Great, Unholy, Awakened(Cor), Dormant(Cor)`
-- [ ] `Creature DisjointWith: Human`
-- [ ] `Fire DisjointWith: Neutral, Shadow`
-- [ ] `Armor DisjointWith: Weapon, Utility`
+- [x] `Alterable DisjointWith: Immutable`
+- [x] `Ascension DisjointWith: Corruption, Mundane`
+- [x] `Aspect DisjointWith: Enchantment, Entity, Object`
+- [x] `Beast DisjointWith: Demon, Devil, Monster, Terror, Titan, Tyrant`
+- [x] `Class DisjointWith: Rank, SoulCoresType`
+- [x] `Corrupted DisjointWith: Cursed, Fallen, Great, Unholy, Awakened(Cor), Dormant(Cor)`
+- [x] `Creature DisjointWith: Human`
+- [x] `Fire DisjointWith: Neutral, Shadow`
+- [x] `Armor DisjointWith: Weapon, Utility`
