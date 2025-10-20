@@ -771,6 +771,11 @@
         <Literal>Thing with this rank must have 3 Enchantments.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Fire</IRI>
+        <Literal>Core made of Fire</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
         <IRI>#God</IRI>
         <Literal>Thing with this rank must have 7 Enchantments.</Literal>
@@ -842,6 +847,11 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Neutral</IRI>
+        <Literal>Core made of Soul</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Object</IRI>
         <Literal>There is few kinds of objects that all have the same attributes.</Literal>
     </AnnotationAssertion>
@@ -869,6 +879,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
         <IRI>#Saint</IRI>
         <Literal>Thing with this rank must have 4 Enchantments.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Shadow</IRI>
+        <Literal>Core made of Shadow</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
