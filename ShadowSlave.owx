@@ -12,6 +12,652 @@
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Alterable"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Armor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ascended"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ascension"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Aspect"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Beast"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Class"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Corrupted"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Corruption"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Creature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cursed"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Demon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Devil"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Divine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Echo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Enchantment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Entity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fallen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fire"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#God"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Great"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Human"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HumanNames"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Immutable"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Master"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Monster"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mundane"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Neutral"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Object"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rank"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sacred"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Saint"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Shadow"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sleeper"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SoulCoresType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sovereign"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SpellNames"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Spirit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Supreme"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Terror"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Titan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Transcendent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tyrant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Unholy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Utility"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Weapon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Awakaned(Hum)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Awakened(Asc)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Awakened(Cor)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dormant(Asc)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dormant(Cor)"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cassie"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ChildrenOfShadow"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FireBearer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FireKeeper"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FlameSword"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fly"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ghoul"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ImmortalShell"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Imp"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Kai"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MentleOfUnderworld"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MindlessSword"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MirrorEdge"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MundaneSword"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NightSilk"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Nightmare"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Noisy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NoisyBell"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NoisyFlute"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Oracle"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OtherAspects"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OtherEnchantments"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PerfectReflection"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ReinforcedArmor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Scavenger"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ShadowStep"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sharpness"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SoulMirror"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#StoneGolem"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sunless"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Saint(Ech)"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#Ascended"/>
+        <Class IRI="#Master"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Divine"/>
+        <Class IRI="#God"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Sacred"/>
+        <Class IRI="#Spirit"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Saint"/>
+        <Class IRI="#Transcendent"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Sleeper"/>
+        <Class IRI="#Dormant(Asc)"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Sovereign"/>
+        <Class IRI="#Supreme"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Awakaned(Hum)"/>
+        <Class IRI="#Awakened(Asc)"/>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Armor"/>
+        <Class IRI="#Object"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ascended"/>
+        <Class IRI="#SpellNames"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ascension"/>
+        <Class IRI="#Rank"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Aspect"/>
+        <Class IRI="#Alterable"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Beast"/>
+        <Class IRI="#Class"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Class"/>
+        <Class IRI="#Immutable"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Corrupted"/>
+        <Class IRI="#Corruption"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Corruption"/>
+        <Class IRI="#Rank"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Creature"/>
+        <Class IRI="#Entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cursed"/>
+        <Class IRI="#Corruption"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Demon"/>
+        <Class IRI="#Class"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Devil"/>
+        <Class IRI="#Class"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Divine"/>
+        <Class IRI="#SpellNames"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Echo"/>
+        <Class IRI="#Entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Enchantment"/>
+        <Class IRI="#Alterable"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Entity"/>
+        <Class IRI="#Alterable"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fallen"/>
+        <Class IRI="#Corruption"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fire"/>
+        <Class IRI="#SoulCoresType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#God"/>
+        <Class IRI="#HumanNames"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Great"/>
+        <Class IRI="#Corruption"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Human"/>
+        <Class IRI="#Entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HumanNames"/>
+        <Class IRI="#Ascension"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Master"/>
+        <Class IRI="#HumanNames"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Monster"/>
+        <Class IRI="#Class"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mundane"/>
+        <Class IRI="#Rank"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Neutral"/>
+        <Class IRI="#SoulCoresType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Object"/>
+        <Class IRI="#Alterable"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rank"/>
+        <Class IRI="#Immutable"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sacred"/>
+        <Class IRI="#SpellNames"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Saint"/>
+        <Class IRI="#HumanNames"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Shadow"/>
+        <Class IRI="#SoulCoresType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sleeper"/>
+        <Class IRI="#HumanNames"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SoulCoresType"/>
+        <Class IRI="#Immutable"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sovereign"/>
+        <Class IRI="#HumanNames"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SpellNames"/>
+        <Class IRI="#Ascension"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Spirit"/>
+        <Class IRI="#HumanNames"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Supreme"/>
+        <Class IRI="#SpellNames"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Terror"/>
+        <Class IRI="#Class"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Titan"/>
+        <Class IRI="#Class"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Transcendent"/>
+        <Class IRI="#SpellNames"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tyrant"/>
+        <Class IRI="#Class"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Unholy"/>
+        <Class IRI="#Corruption"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Utility"/>
+        <Class IRI="#Object"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Weapon"/>
+        <Class IRI="#Object"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Awakaned(Hum)"/>
+        <Class IRI="#HumanNames"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Awakened(Asc)"/>
+        <Class IRI="#SpellNames"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Awakened(Cor)"/>
+        <Class IRI="#Corruption"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dormant(Asc)"/>
+        <Class IRI="#SpellNames"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dormant(Cor)"/>
+        <Class IRI="#Corruption"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Alterable"/>
+        <Class IRI="#Immutable"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Armor"/>
+        <Class IRI="#Utility"/>
+        <Class IRI="#Weapon"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Ascension"/>
+        <Class IRI="#Corruption"/>
+        <Class IRI="#Mundane"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Aspect"/>
+        <Class IRI="#Enchantment"/>
+        <Class IRI="#Entity"/>
+        <Class IRI="#Object"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Beast"/>
+        <Class IRI="#Demon"/>
+        <Class IRI="#Devil"/>
+        <Class IRI="#Monster"/>
+        <Class IRI="#Terror"/>
+        <Class IRI="#Titan"/>
+        <Class IRI="#Tyrant"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Class"/>
+        <Class IRI="#Rank"/>
+        <Class IRI="#SoulCoresType"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Corrupted"/>
+        <Class IRI="#Cursed"/>
+        <Class IRI="#Fallen"/>
+        <Class IRI="#Great"/>
+        <Class IRI="#Unholy"/>
+        <Class IRI="#Awakened(Cor)"/>
+        <Class IRI="#Dormant(Cor)"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Creature"/>
+        <Class IRI="#Human"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Fire"/>
+        <Class IRI="#Neutral"/>
+        <Class IRI="#Shadow"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Human"/>
+        <NamedIndividual IRI="#Cassie"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Aspect"/>
+        <NamedIndividual IRI="#ChildrenOfShadow"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Aspect"/>
+        <NamedIndividual IRI="#FireBearer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Enchantment"/>
+        <NamedIndividual IRI="#FireKeeper"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Weapon"/>
+        <NamedIndividual IRI="#FlameSword"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Enchantment"/>
+        <NamedIndividual IRI="#Fly"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Creature"/>
+        <NamedIndividual IRI="#Ghoul"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Armor"/>
+        <NamedIndividual IRI="#ImmortalShell"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Echo"/>
+        <NamedIndividual IRI="#Imp"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Human"/>
+        <NamedIndividual IRI="#Kai"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Armor"/>
+        <NamedIndividual IRI="#MentleOfUnderworld"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Weapon"/>
+        <NamedIndividual IRI="#MindlessSword"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Weapon"/>
+        <NamedIndividual IRI="#MirrorEdge"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Weapon"/>
+        <NamedIndividual IRI="#MundaneSword"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Armor"/>
+        <NamedIndividual IRI="#NightSilk"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Echo"/>
+        <NamedIndividual IRI="#Nightmare"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Enchantment"/>
+        <NamedIndividual IRI="#Noisy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Utility"/>
+        <NamedIndividual IRI="#NoisyBell"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Utility"/>
+        <NamedIndividual IRI="#NoisyFlute"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Aspect"/>
+        <NamedIndividual IRI="#Oracle"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Aspect"/>
+        <NamedIndividual IRI="#OtherAspects"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Enchantment"/>
+        <NamedIndividual IRI="#OtherEnchantments"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Enchantment"/>
+        <NamedIndividual IRI="#PerfectReflection"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Armor"/>
+        <NamedIndividual IRI="#ReinforcedArmor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Creature"/>
+        <NamedIndividual IRI="#Scavenger"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Enchantment"/>
+        <NamedIndividual IRI="#ShadowStep"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Enchantment"/>
+        <NamedIndividual IRI="#Sharpness"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Utility"/>
+        <NamedIndividual IRI="#SoulMirror"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Creature"/>
+        <NamedIndividual IRI="#StoneGolem"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Human"/>
+        <NamedIndividual IRI="#Sunless"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Echo"/>
+        <NamedIndividual IRI="#Saint(Ech)"/>
+    </ClassAssertion>
 </Ontology>
 
 
