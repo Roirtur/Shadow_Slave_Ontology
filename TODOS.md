@@ -3,13 +3,15 @@
 ## Step 0: Add Object Properties
 We first need to define these object properties in Protégé before applying restrictions.
 
-- [ ] `hasRank` (domain: Entity ⊔ Object ⊔ Human, range: Rank)
-- [ ] `hasClass` (domain: Entity ⊔ Human, range: Class)
-- [ ] `hasAspect` (domain: Human, range: Aspect)
-- [ ] `hasCore` (domain: Entity, range: SoulCoresType)
-- [ ] `hasEnchantment` (domain: Human ⊔ Creature ⊔ Object, range: Enchantment)
-- [ ] `owns` (domain: Human, range: Object ⊔ Echo)
-- [ ] `hasOwner` (domain: Echo, range: Human)
+- [x] `hasRank` (domain: Entity ⊔ Object ⊔ Human, range: Rank)
+  - [x] `followAscension`
+  - [x] `followCorruption`
+- [x] `hasClass` (domain: Entity ⊔ Human, range: Class)
+- [x] `hasAspect` (domain: Human, range: Aspect)
+- [x] `hasCore` (domain: Entity, range: SoulCoresType)
+- [x] `hasEnchantment` (domain: Human ⊔ Creature ⊔ Object, range: Enchantment)
+- [x] `owns` (domain: Human, range: Object ⊔ Echo)
+- [x] `hasOwner` (domain: Echo, range: Human)
 
 ---
 
