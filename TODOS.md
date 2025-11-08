@@ -91,7 +91,7 @@ We first need to define these object properties in Protégé before applying res
 ### 3.2 Nightmare Classification (Optional Enhancement)
 - [ ] Create `FirstNightmare`, `SecondNightmare`, `ThirdNightmare` subclasses
 - [ ] Add progression tracking with data properties
-
+- [ ] Maybe add "has exactly 2 enchantment if hasBeaten 2 nightmares" or some sort
 ---
 
 ## Step 4: Object Superiority Rules *(NEW)*
