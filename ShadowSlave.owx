@@ -273,6 +273,91 @@
     <Declaration>
         <NamedIndividual IRI="#Sunless"/>
     </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TruthTolder"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#Awakened_Asc"/>
+        <ObjectExactCardinality cardinality="2">
+            <ObjectProperty IRI="#hasEnchantment"/>
+            <Class IRI="#Enchantment"/>
+        </ObjectExactCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Beast"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#hasCore"/>
+            <Class IRI="#SoulCoresType"/>
+        </ObjectExactCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Demon"/>
+        <ObjectExactCardinality cardinality="3">
+            <ObjectProperty IRI="#hasCore"/>
+            <Class IRI="#SoulCoresType"/>
+        </ObjectExactCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Devil"/>
+        <ObjectExactCardinality cardinality="4">
+            <ObjectProperty IRI="#hasCore"/>
+            <Class IRI="#SoulCoresType"/>
+        </ObjectExactCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Entity"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasCore"/>
+                <Class IRI="#SoulCoresType"/>
+            </ObjectSomeValuesFrom>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="#hasClass"/>
+                <Class IRI="#CoreClass"/>
+            </ObjectExactCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Human"/>
+        <ObjectIntersectionOf>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="#hasAspect"/>
+                <Class IRI="#Aspect"/>
+            </ObjectExactCardinality>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="#hasFlaw"/>
+                <Class IRI="#Flaw"/>
+            </ObjectExactCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Monster"/>
+        <ObjectExactCardinality cardinality="2">
+            <ObjectProperty IRI="#hasCore"/>
+            <Class IRI="#SoulCoresType"/>
+        </ObjectExactCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Terror"/>
+        <ObjectExactCardinality cardinality="6">
+            <ObjectProperty IRI="#hasCore"/>
+            <Class IRI="#SoulCoresType"/>
+        </ObjectExactCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Titan"/>
+        <ObjectExactCardinality cardinality="7">
+            <ObjectProperty IRI="#hasCore"/>
+            <Class IRI="#SoulCoresType"/>
+        </ObjectExactCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Tyrant"/>
+        <ObjectExactCardinality cardinality="5">
+            <ObjectProperty IRI="#hasCore"/>
+            <Class IRI="#SoulCoresType"/>
+        </ObjectExactCardinality>
+    </EquivalentClasses>
     <SubClassOf>
         <Class IRI="#Armor"/>
         <Class IRI="#Object"/>
@@ -381,19 +466,6 @@
         <Class IRI="#Alterable"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Entity"/>
-        <ObjectIntersectionOf>
-            <ObjectExactCardinality cardinality="1">
-                <ObjectProperty IRI="#hasClass"/>
-                <Class IRI="#CoreClass"/>
-            </ObjectExactCardinality>
-            <ObjectExactCardinality cardinality="1">
-                <ObjectProperty IRI="#hasCore"/>
-                <Class IRI="#SoulCoresType"/>
-            </ObjectExactCardinality>
-        </ObjectIntersectionOf>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#Fallen"/>
         <Class IRI="#CorruptionPath"/>
     </SubClassOf>
@@ -412,19 +484,6 @@
     <SubClassOf>
         <Class IRI="#Human"/>
         <Class IRI="#Entity"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Human"/>
-        <ObjectIntersectionOf>
-            <ObjectExactCardinality cardinality="1">
-                <ObjectProperty IRI="#hasAspect"/>
-                <Class IRI="#Aspect"/>
-            </ObjectExactCardinality>
-            <ObjectExactCardinality cardinality="1">
-                <ObjectProperty IRI="#hasFlaw"/>
-                <Class IRI="#Flaw"/>
-            </ObjectExactCardinality>
-        </ObjectIntersectionOf>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Human"/>
@@ -566,11 +625,6 @@
         <Class IRI="#Terror"/>
         <Class IRI="#Titan"/>
         <Class IRI="#Tyrant"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#CoreClass"/>
-        <Class IRI="#Rank"/>
-        <Class IRI="#SoulCoresType"/>
     </DisjointClasses>
     <DisjointClasses>
         <Class IRI="#Creature"/>
@@ -720,20 +774,72 @@
         <Class IRI="#Creature"/>
         <NamedIndividual IRI="#StoneGolem"/>
     </ClassAssertion>
+    <ClassAssertion>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasAspect"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#ChildrenOfShadow"/>
+            </ObjectOneOf>
+        </ObjectAllValuesFrom>
+        <NamedIndividual IRI="#Sunless"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasEnchantment"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#Fly"/>
+                <NamedIndividual IRI="#ShadowStep"/>
+            </ObjectOneOf>
+        </ObjectAllValuesFrom>
+        <NamedIndividual IRI="#Sunless"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasFlaw"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#TruthTolder"/>
+            </ObjectOneOf>
+        </ObjectAllValuesFrom>
+        <NamedIndividual IRI="#Sunless"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#hasCore"/>
+            <Class IRI="#ShadowCore"/>
+        </ObjectExactCardinality>
+        <NamedIndividual IRI="#Sunless"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Flaw"/>
+        <NamedIndividual IRI="#TruthTolder"/>
+    </ClassAssertion>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#ChildrenOfShadow"/>
+        <NamedIndividual IRI="#Fly"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Fly"/>
+        <NamedIndividual IRI="#ShadowStep"/>
+    </DifferentIndividuals>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasAspect"/>
         <NamedIndividual IRI="#Sunless"/>
         <NamedIndividual IRI="#ChildrenOfShadow"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasAspect"/>
+        <ObjectProperty IRI="#hasEnchantment"/>
         <NamedIndividual IRI="#Sunless"/>
-        <NamedIndividual IRI="#FireBearer"/>
+        <NamedIndividual IRI="#Fly"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasEnchantment"/>
         <NamedIndividual IRI="#Sunless"/>
         <NamedIndividual IRI="#ShadowStep"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFlaw"/>
+        <NamedIndividual IRI="#Sunless"/>
+        <NamedIndividual IRI="#TruthTolder"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#owns"/>
@@ -823,19 +929,11 @@
         <Class IRI="#Entity"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasAspect"/>
-        <Class IRI="#Human"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasClass"/>
         <Class IRI="#Entity"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasConqueredNightmare"/>
-        <Class IRI="#Human"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasCore"/>
         <Class IRI="#Entity"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
@@ -846,23 +944,12 @@
         </ObjectUnionOf>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasOwner"/>
-        <ObjectUnionOf>
-            <Class IRI="#Echo"/>
-            <Class IRI="#Object"/>
-        </ObjectUnionOf>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasRank"/>
         <ObjectUnionOf>
             <Class IRI="#Aspect"/>
             <Class IRI="#Entity"/>
             <Class IRI="#Object"/>
         </ObjectUnionOf>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#owns"/>
-        <Class IRI="#Human"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#followAscension"/>
@@ -898,7 +985,7 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasOwner"/>
-        <Class IRI="#Human"/>
+        <Class IRI="#Entity"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasRank"/>

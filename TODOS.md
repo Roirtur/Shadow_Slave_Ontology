@@ -15,7 +15,7 @@ We first need to define these object properties in Protégé before applying res
 - [x] `hasOwner` (domain: Echo, range: Human)
 
 ### New Properties to Add
-- [ ] `hasFlaw` (domain: Human, range: Flaw)
+- [x] `hasFlaw` (domain: Human, range: Flaw)
 - [ ] `hasConqueredNightmare` (domain: Human, range: Nightmare) - already exists, verify range
 - [ ] `beatsRank` (domain: Object, range: Rank) - for weapon superiority rules
 
@@ -139,8 +139,8 @@ We first need to define these object properties in Protégé before applying res
 ## Step 9: Aspect, Enchantment & Flaw Rules
 - [x] `Aspect SubClassOf: Alterable and hasRank some AscensionRank`
 - [x] `Enchantment SubClassOf: Alterable`
-- [ ] `Flaw SubClassOf: Alterable` *(NEW)*
-- [ ] Define common Flaw individuals (e.g., `BlindSight`, `Corruption`, `MortalForm`)
+- [x] `Flaw SubClassOf: Alterable` *(NEW)*
+- [x] Define common Flaw individuals (e.g., `BlindSight`, `Corruption`, `MortalForm`)
 
 ---
 
