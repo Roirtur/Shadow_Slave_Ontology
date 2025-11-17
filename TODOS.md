@@ -32,50 +32,42 @@ We first need to define these object properties in Protégé before applying res
 
 ## Step 2: Cardinality Rules (Enchantments & Cores)
 
-### 2.1 Human Ascension Ranks by Enchantment Count
+<!-- ### 2.1 Human Ascension Ranks by Enchantment Count
 - [ ] `Sleeper SubClassOf: Human and hasEnchantment exactly 1 Enchantment`
 - [ ] `Awakened(Hum) SubClassOf: Human and hasEnchantment exactly 2 Enchantment`
-- [ ] `Master SubClassOf: Human and hasEnchantment exactly 3 Enchantment`
 - [ ] `Ascended SubClassOf: Human and hasEnchantment exactly 3 Enchantment`
-- [ ] `Saint SubClassOf: Human and hasEnchantment exactly 4 Enchantment`
 - [ ] `Transcendent SubClassOf: Human and hasEnchantment exactly 4 Enchantment`
-- [ ] `Sovereign SubClassOf: Human and hasEnchantment exactly 5 Enchantment`
 - [ ] `Supreme SubClassOf: Human and hasEnchantment exactly 5 Enchantment`
 - [ ] `Sacred SubClassOf: Human and hasEnchantment exactly 6 Enchantment`
-- [ ] `Spirit SubClassOf: Human and hasEnchantment exactly 6 Enchantment`
-- [ ] `Divine SubClassOf: Human and hasEnchantment exactly 7 Enchantment`
+- [ ] `Divine SubClassOf: Human and hasEnchantment exactly 7 Enchantment` -->
 
-### 2.2 Creature Corruption Ranks by Enchantment Count
-- [ ] `Dormant(Cor) SubClassOf: Creature and hasEnchantment exactly 1 Enchantment`
-- [ ] `Awakened(Cor) SubClassOf: Creature and hasEnchantment exactly 2 Enchantment`
-- [ ] `Fallen SubClassOf: Creature and hasEnchantment exactly 3 Enchantment`
-- [ ] `Corrupted SubClassOf: Creature and hasEnchantment exactly 4 Enchantment`
-- [ ] `Great SubClassOf: Creature and hasEnchantment exactly 5 Enchantment`
-- [ ] `Cursed SubClassOf: Creature and hasEnchantment exactly 6 Enchantment`
-- [ ] `Unholy SubClassOf: Creature and hasEnchantment exactly 7 Enchantment`
+### 2.1 Creature Corruption Ranks by Enchantment Count
+- [x] `Dormant(Cor) SubClassOf: Creature and hasEnchantment exactly 1 Enchantment`
+- [x] `Awakened(Cor) SubClassOf: Creature and hasEnchantment exactly 2 Enchantment`
+- [x] `Fallen SubClassOf: Creature and hasEnchantment exactly 3 Enchantment`
+- [x] `Corrupted SubClassOf: Creature and hasEnchantment exactly 4 Enchantment`
+- [x] `Great SubClassOf: Creature and hasEnchantment exactly 5 Enchantment`
+- [x] `Cursed SubClassOf: Creature and hasEnchantment exactly 6 Enchantment`
+- [x] `Unholy SubClassOf: Creature and hasEnchantment exactly 7 Enchantment`
+
+### 2.2 Ascension Ranks by Enchantment Count (Generic)
+- [x] `Dormant(Asc) SubClassOf: Rank and hasEnchantment exactly 1 Enchantment`
+- [x] `Awakened(Asc) SubClassOf: Rank and hasEnchantment exactly 2 Enchantment`
+- [x] `Ascended SubClassOf: Rank and hasEnchantment exactly 3 Enchantment`
+- [x] `Transcendent SubClassOf: Rank and hasEnchantment exactly 4 Enchantment`
+- [x] `Supreme SubClassOf: Rank and hasEnchantment exactly 5 Enchantment`
+- [x] `Sacred SubClassOf: Rank and hasEnchantment exactly 6 Enchantment`
+- [x] `Divine SubClassOf: Rank and hasEnchantment exactly 7 Enchantment`
 
 ### 2.3 Entity Classes by Core Count
-- [ ] `Beast SubClassOf: Class and hasCore exactly 1 SoulCoreType`
-- [ ] `Monster SubClassOf: Class and hasCore exactly 2 SoulCoreType`
-- [ ] `Demon SubClassOf: Class and hasCore exactly 3 SoulCoreType`
-- [ ] `Devil SubClassOf: Class and hasCore exactly 4 SoulCoreType`
-- [ ] `Tyrant SubClassOf: Class and hasCore exactly 5 SoulCoreType`
-- [ ] `Terror SubClassOf: Class and hasCore exactly 6 SoulCoreType`
-- [ ] `Titan SubClassOf: Class and hasCore exactly 7 SoulCoreType`
+- [x] `Beast SubClassOf: Class and hasCore exactly 1 SoulCoreType`
+- [x] `Monster SubClassOf: Class and hasCore exactly 2 SoulCoreType`
+- [x] `Demon SubClassOf: Class and hasCore exactly 3 SoulCoreType`
+- [x] `Devil SubClassOf: Class and hasCore exactly 4 SoulCoreType`
+- [x] `Tyrant SubClassOf: Class and hasCore exactly 5 SoulCoreType`
+- [x] `Terror SubClassOf: Class and hasCore exactly 6 SoulCoreType`
+- [x] `Titan SubClassOf: Class and hasCore exactly 7 SoulCoreType`
 
-### 2.4 Ascension Ranks by Enchantment Count (Generic)
-- [ ] `Dormant(Asc) SubClassOf: Rank and hasEnchantment exactly 1 Enchantment`
-- [ ] `Awakened(Asc) SubClassOf: Rank and hasEnchantment exactly 2 Enchantment`
-- [ ] `Ascended SubClassOf: Rank and hasEnchantment exactly 3 Enchantment`
-- [ ] `Master SubClassOf: Rank and hasEnchantment exactly 3 Enchantment`
-- [ ] `Saint SubClassOf: Rank and hasEnchantment exactly 4 Enchantment`
-- [ ] `Transcendent SubClassOf: Rank and hasEnchantment exactly 4 Enchantment`
-- [ ] `Sovereign SubClassOf: Rank and hasEnchantment exactly 5 Enchantment`
-- [ ] `Supreme SubClassOf: Rank and hasEnchantment exactly 5 Enchantment`
-- [ ] `Sacred SubClassOf: Rank and hasEnchantment exactly 6 Enchantment`
-- [ ] `Spirit SubClassOf: Rank and hasEnchantment exactly 6 Enchantment`
-- [ ] `Divine SubClassOf: Rank and hasEnchantment exactly 7 Enchantment`
-- [ ] `Sleeper SubClassOf: Rank and hasEnchantment exactly 1 Enchantment`
 
 ---
 
