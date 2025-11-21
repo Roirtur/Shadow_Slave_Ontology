@@ -178,94 +178,19 @@
         <ObjectProperty IRI="#owns"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Bob"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Cassie"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#ChildrenOfShadow"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#FireBearer"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#FireKeeper"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#FlameSword"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#Fly"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Ghoul"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#ImmortalShell"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Imp"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Kai"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#MentleOfUnderworld"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#MindlessSword"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#MirrorEdge"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#MundaneSword"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#NightSilk"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Nightmare_Ech"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Noisy"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#NoisyBell"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#NoisyFlute"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Oracle"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#OtherAspects"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#OtherEnchantments"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#PerfectReflection"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#ReinforcedArmor"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Saint_Ech"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Scavenger"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#ShadowStep"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Sharpness"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#SoulMirror"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#StoneGolem"/>
@@ -282,7 +207,11 @@
     <EquivalentClasses>
         <Class IRI="#Ascended"/>
         <ObjectIntersectionOf>
-            <Class IRI="#Human"/>
+            <ObjectUnionOf>
+                <Class IRI="#Echo"/>
+                <Class IRI="#Enchantment"/>
+                <Class IRI="#Human"/>
+            </ObjectUnionOf>
             <ObjectExactCardinality cardinality="3">
                 <ObjectProperty IRI="#hasEnchantment"/>
                 <Class IRI="#Enchantment"/>
@@ -292,7 +221,11 @@
     <EquivalentClasses>
         <Class IRI="#Awakened_Asc"/>
         <ObjectIntersectionOf>
-            <Class IRI="#Human"/>
+            <ObjectUnionOf>
+                <Class IRI="#Echo"/>
+                <Class IRI="#Enchantment"/>
+                <Class IRI="#Human"/>
+            </ObjectUnionOf>
             <ObjectExactCardinality cardinality="2">
                 <ObjectProperty IRI="#hasEnchantment"/>
                 <Class IRI="#Enchantment"/>
@@ -353,7 +286,11 @@
     <EquivalentClasses>
         <Class IRI="#Divine"/>
         <ObjectIntersectionOf>
-            <Class IRI="#Human"/>
+            <ObjectUnionOf>
+                <Class IRI="#Echo"/>
+                <Class IRI="#Enchantment"/>
+                <Class IRI="#Human"/>
+            </ObjectUnionOf>
             <ObjectExactCardinality cardinality="7">
                 <ObjectProperty IRI="#hasEnchantment"/>
                 <Class IRI="#Enchantment"/>
@@ -363,7 +300,11 @@
     <EquivalentClasses>
         <Class IRI="#Dormant_Asc"/>
         <ObjectIntersectionOf>
-            <Class IRI="#Human"/>
+            <ObjectUnionOf>
+                <Class IRI="#Echo"/>
+                <Class IRI="#Enchantment"/>
+                <Class IRI="#Human"/>
+            </ObjectUnionOf>
             <ObjectExactCardinality cardinality="1">
                 <ObjectProperty IRI="#hasEnchantment"/>
                 <Class IRI="#Enchantment"/>
@@ -436,7 +377,11 @@
     <EquivalentClasses>
         <Class IRI="#Sacred"/>
         <ObjectIntersectionOf>
-            <Class IRI="#Human"/>
+            <ObjectUnionOf>
+                <Class IRI="#Echo"/>
+                <Class IRI="#Enchantment"/>
+                <Class IRI="#Human"/>
+            </ObjectUnionOf>
             <ObjectExactCardinality cardinality="6">
                 <ObjectProperty IRI="#hasEnchantment"/>
                 <Class IRI="#Enchantment"/>
@@ -446,7 +391,11 @@
     <EquivalentClasses>
         <Class IRI="#Supreme"/>
         <ObjectIntersectionOf>
-            <Class IRI="#Human"/>
+            <ObjectUnionOf>
+                <Class IRI="#Echo"/>
+                <Class IRI="#Enchantment"/>
+                <Class IRI="#Human"/>
+            </ObjectUnionOf>
             <ObjectExactCardinality cardinality="5">
                 <ObjectProperty IRI="#hasEnchantment"/>
                 <Class IRI="#Enchantment"/>
@@ -470,7 +419,11 @@
     <EquivalentClasses>
         <Class IRI="#Transcendent"/>
         <ObjectIntersectionOf>
-            <Class IRI="#Human"/>
+            <ObjectUnionOf>
+                <Class IRI="#Echo"/>
+                <Class IRI="#Enchantment"/>
+                <Class IRI="#Human"/>
+            </ObjectUnionOf>
             <ObjectExactCardinality cardinality="4">
                 <ObjectProperty IRI="#hasEnchantment"/>
                 <Class IRI="#Enchantment"/>
@@ -780,14 +733,6 @@
         <Class IRI="#ShadowCore"/>
     </DisjointClasses>
     <ClassAssertion>
-        <Class IRI="#Human"/>
-        <NamedIndividual IRI="#Bob"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Human"/>
-        <NamedIndividual IRI="#Cassie"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="#Aspect"/>
         <NamedIndividual IRI="#ChildrenOfShadow"/>
     </ClassAssertion>
@@ -799,112 +744,20 @@
         <NamedIndividual IRI="#ChildrenOfShadow"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Aspect"/>
-        <NamedIndividual IRI="#FireBearer"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="#Enchantment"/>
         <NamedIndividual IRI="#FireKeeper"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Weapon"/>
-        <NamedIndividual IRI="#FlameSword"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Enchantment"/>
         <NamedIndividual IRI="#Fly"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Creature"/>
-        <NamedIndividual IRI="#Ghoul"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Armor"/>
-        <NamedIndividual IRI="#ImmortalShell"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Echo"/>
-        <NamedIndividual IRI="#Imp"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Human"/>
-        <NamedIndividual IRI="#Kai"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Armor"/>
-        <NamedIndividual IRI="#MentleOfUnderworld"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Weapon"/>
-        <NamedIndividual IRI="#MindlessSword"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Weapon"/>
-        <NamedIndividual IRI="#MirrorEdge"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Weapon"/>
-        <NamedIndividual IRI="#MundaneSword"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Armor"/>
-        <NamedIndividual IRI="#NightSilk"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Echo"/>
-        <NamedIndividual IRI="#Nightmare_Ech"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Enchantment"/>
-        <NamedIndividual IRI="#Noisy"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Utility"/>
-        <NamedIndividual IRI="#NoisyBell"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Utility"/>
-        <NamedIndividual IRI="#NoisyFlute"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Aspect"/>
-        <NamedIndividual IRI="#Oracle"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Aspect"/>
-        <NamedIndividual IRI="#OtherAspects"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Enchantment"/>
-        <NamedIndividual IRI="#OtherEnchantments"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Enchantment"/>
-        <NamedIndividual IRI="#PerfectReflection"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Armor"/>
-        <NamedIndividual IRI="#ReinforcedArmor"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="#Echo"/>
         <NamedIndividual IRI="#Saint_Ech"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Creature"/>
-        <NamedIndividual IRI="#Scavenger"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="#Enchantment"/>
         <NamedIndividual IRI="#ShadowStep"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Enchantment"/>
-        <NamedIndividual IRI="#Sharpness"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Utility"/>
-        <NamedIndividual IRI="#SoulMirror"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Creature"/>
@@ -917,6 +770,13 @@
                 <NamedIndividual IRI="#StoneWall"/>
             </ObjectOneOf>
         </ObjectAllValuesFrom>
+        <NamedIndividual IRI="#StoneGolem"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#hasCore"/>
+            <Class IRI="#SoulCoresType"/>
+        </ObjectExactCardinality>
         <NamedIndividual IRI="#StoneGolem"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -1024,37 +884,7 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#owns"/>
         <NamedIndividual IRI="#Sunless"/>
-        <NamedIndividual IRI="#Imp"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#owns"/>
-        <NamedIndividual IRI="#Sunless"/>
-        <NamedIndividual IRI="#MentleOfUnderworld"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#owns"/>
-        <NamedIndividual IRI="#Sunless"/>
-        <NamedIndividual IRI="#MindlessSword"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#owns"/>
-        <NamedIndividual IRI="#Sunless"/>
-        <NamedIndividual IRI="#NightSilk"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#owns"/>
-        <NamedIndividual IRI="#Sunless"/>
-        <NamedIndividual IRI="#Nightmare_Ech"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#owns"/>
-        <NamedIndividual IRI="#Sunless"/>
         <NamedIndividual IRI="#Saint_Ech"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#owns"/>
-        <NamedIndividual IRI="#Sunless"/>
-        <NamedIndividual IRI="#SoulMirror"/>
     </ObjectPropertyAssertion>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#followAscension"/>
