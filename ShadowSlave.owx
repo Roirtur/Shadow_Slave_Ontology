@@ -163,6 +163,12 @@
         <ObjectProperty IRI="#owns"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#coreCount"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#enchantmentCount"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#ChildrenOfShadow"/>
     </Declaration>
     <Declaration>
@@ -196,241 +202,46 @@
         <NamedIndividual IRI="#TruthTolder"/>
     </Declaration>
     <EquivalentClasses>
-        <Class IRI="#Ascended"/>
-        <ObjectIntersectionOf>
-            <ObjectUnionOf>
-                <Class IRI="#Echo"/>
-                <Class IRI="#Enchantment"/>
-                <Class IRI="#Human"/>
-            </ObjectUnionOf>
-            <ObjectExactCardinality cardinality="3">
-                <ObjectProperty IRI="#hasEnchantment"/>
-                <Class IRI="#Enchantment"/>
-            </ObjectExactCardinality>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
         <Class IRI="#Awakened_Asc"/>
-        <ObjectIntersectionOf>
-            <ObjectUnionOf>
-                <Class IRI="#Echo"/>
-                <Class IRI="#Enchantment"/>
-                <Class IRI="#Human"/>
-            </ObjectUnionOf>
-            <ObjectExactCardinality cardinality="2">
-                <ObjectProperty IRI="#hasEnchantment"/>
-                <Class IRI="#Enchantment"/>
-            </ObjectExactCardinality>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#Awakened_Cor"/>
-        <ObjectIntersectionOf>
-            <Class IRI="#Creature"/>
-            <ObjectExactCardinality cardinality="2">
-                <ObjectProperty IRI="#hasEnchantment"/>
-                <Class IRI="#Enchantment"/>
-            </ObjectExactCardinality>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#Beast"/>
-        <ObjectExactCardinality cardinality="1">
-            <ObjectProperty IRI="#hasCore"/>
-            <Class IRI="#SoulCores"/>
-        </ObjectExactCardinality>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#Corrupted"/>
-        <ObjectIntersectionOf>
-            <Class IRI="#Creature"/>
-            <ObjectExactCardinality cardinality="4">
-                <ObjectProperty IRI="#hasEnchantment"/>
-                <Class IRI="#Enchantment"/>
-            </ObjectExactCardinality>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#Cursed"/>
-        <ObjectIntersectionOf>
-            <Class IRI="#Creature"/>
-            <ObjectExactCardinality cardinality="6">
-                <ObjectProperty IRI="#hasEnchantment"/>
-                <Class IRI="#Enchantment"/>
-            </ObjectExactCardinality>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#Demon"/>
-        <ObjectExactCardinality cardinality="3">
-            <ObjectProperty IRI="#hasCore"/>
-            <Class IRI="#SoulCores"/>
-        </ObjectExactCardinality>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#Devil"/>
-        <ObjectExactCardinality cardinality="4">
-            <ObjectProperty IRI="#hasCore"/>
-            <Class IRI="#SoulCores"/>
-        </ObjectExactCardinality>
+        <DataHasValue>
+            <DataProperty IRI="#enchantmentCount"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+        </DataHasValue>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#Divine"/>
-        <ObjectIntersectionOf>
-            <ObjectUnionOf>
-                <Class IRI="#Echo"/>
-                <Class IRI="#Enchantment"/>
-                <Class IRI="#Human"/>
-            </ObjectUnionOf>
-            <ObjectExactCardinality cardinality="7">
-                <ObjectProperty IRI="#hasEnchantment"/>
-                <Class IRI="#Enchantment"/>
-            </ObjectExactCardinality>
-        </ObjectIntersectionOf>
+        <DataHasValue>
+            <DataProperty IRI="#enchantmentCount"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">7</Literal>
+        </DataHasValue>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#Dormant_Asc"/>
-        <ObjectIntersectionOf>
-            <ObjectUnionOf>
-                <Class IRI="#Echo"/>
-                <Class IRI="#Enchantment"/>
-                <Class IRI="#Human"/>
-            </ObjectUnionOf>
-            <ObjectExactCardinality cardinality="1">
-                <ObjectProperty IRI="#hasEnchantment"/>
-                <Class IRI="#Enchantment"/>
-            </ObjectExactCardinality>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#Dormant_Cor"/>
-        <ObjectIntersectionOf>
-            <Class IRI="#Creature"/>
-            <ObjectExactCardinality cardinality="1">
-                <ObjectProperty IRI="#hasEnchantment"/>
-                <Class IRI="#Enchantment"/>
-            </ObjectExactCardinality>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#Fallen"/>
-        <ObjectIntersectionOf>
-            <Class IRI="#Creature"/>
-            <ObjectExactCardinality cardinality="3">
-                <ObjectProperty IRI="#hasEnchantment"/>
-                <Class IRI="#Enchantment"/>
-            </ObjectExactCardinality>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#Great"/>
-        <ObjectIntersectionOf>
-            <Class IRI="#Creature"/>
-            <ObjectExactCardinality cardinality="5">
-                <ObjectProperty IRI="#hasEnchantment"/>
-                <Class IRI="#Enchantment"/>
-            </ObjectExactCardinality>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#Human"/>
-        <ObjectIntersectionOf>
-            <ObjectExactCardinality cardinality="1">
-                <ObjectProperty IRI="#hasAspect"/>
-                <Class IRI="#Aspect"/>
-            </ObjectExactCardinality>
-            <ObjectExactCardinality cardinality="1">
-                <ObjectProperty IRI="#hasFlaw"/>
-                <Class IRI="#Flaw"/>
-            </ObjectExactCardinality>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#Monster"/>
-        <ObjectExactCardinality cardinality="2">
-            <ObjectProperty IRI="#hasCore"/>
-            <Class IRI="#SoulCores"/>
-        </ObjectExactCardinality>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#Mundane"/>
-        <ObjectExactCardinality cardinality="0">
-            <ObjectProperty IRI="#hasEnchantment"/>
-            <Class IRI="#Enchantment"/>
-        </ObjectExactCardinality>
+        <DataHasValue>
+            <DataProperty IRI="#enchantmentCount"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+        </DataHasValue>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#Sacred"/>
-        <ObjectIntersectionOf>
-            <ObjectUnionOf>
-                <Class IRI="#Echo"/>
-                <Class IRI="#Enchantment"/>
-                <Class IRI="#Human"/>
-            </ObjectUnionOf>
-            <ObjectExactCardinality cardinality="6">
-                <ObjectProperty IRI="#hasEnchantment"/>
-                <Class IRI="#Enchantment"/>
-            </ObjectExactCardinality>
-        </ObjectIntersectionOf>
+        <DataHasValue>
+            <DataProperty IRI="#enchantmentCount"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">6</Literal>
+        </DataHasValue>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#Supreme"/>
-        <ObjectIntersectionOf>
-            <ObjectUnionOf>
-                <Class IRI="#Echo"/>
-                <Class IRI="#Enchantment"/>
-                <Class IRI="#Human"/>
-            </ObjectUnionOf>
-            <ObjectExactCardinality cardinality="5">
-                <ObjectProperty IRI="#hasEnchantment"/>
-                <Class IRI="#Enchantment"/>
-            </ObjectExactCardinality>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#Terror"/>
-        <ObjectExactCardinality cardinality="6">
-            <ObjectProperty IRI="#hasCore"/>
-            <Class IRI="#SoulCores"/>
-        </ObjectExactCardinality>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#Titan"/>
-        <ObjectExactCardinality cardinality="7">
-            <ObjectProperty IRI="#hasCore"/>
-            <Class IRI="#SoulCores"/>
-        </ObjectExactCardinality>
+        <DataHasValue>
+            <DataProperty IRI="#enchantmentCount"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+        </DataHasValue>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#Transcendent"/>
-        <ObjectIntersectionOf>
-            <ObjectUnionOf>
-                <Class IRI="#Echo"/>
-                <Class IRI="#Enchantment"/>
-                <Class IRI="#Human"/>
-            </ObjectUnionOf>
-            <ObjectExactCardinality cardinality="4">
-                <ObjectProperty IRI="#hasEnchantment"/>
-                <Class IRI="#Enchantment"/>
-            </ObjectExactCardinality>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#Tyrant"/>
-        <ObjectExactCardinality cardinality="5">
-            <ObjectProperty IRI="#hasCore"/>
-            <Class IRI="#SoulCores"/>
-        </ObjectExactCardinality>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#Unholy"/>
-        <ObjectIntersectionOf>
-            <Class IRI="#Creature"/>
-            <ObjectExactCardinality cardinality="7">
-                <ObjectProperty IRI="#hasEnchantment"/>
-                <Class IRI="#Enchantment"/>
-            </ObjectExactCardinality>
-        </ObjectIntersectionOf>
+        <DataHasValue>
+            <DataProperty IRI="#enchantmentCount"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+        </DataHasValue>
     </EquivalentClasses>
     <SubClassOf>
         <Class IRI="#Armor"/>
@@ -575,6 +386,20 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Human"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#hasAspect"/>
+            <Class IRI="#Aspect"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Human"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#hasFlaw"/>
+            <Class IRI="#Flaw"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Monster"/>
         <Class IRI="#CoreClass"/>
     </SubClassOf>
@@ -592,16 +417,16 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Object"/>
-        <ObjectMinCardinality cardinality="1">
-            <ObjectProperty IRI="#hasEnchantment"/>
-            <Class IRI="#Enchantment"/>
-        </ObjectMinCardinality>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#hasOwner"/>
+            <Class IRI="#Human"/>
+        </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Object"/>
         <ObjectExactCardinality cardinality="1">
-            <ObjectProperty IRI="#hasOwner"/>
-            <Class IRI="#Human"/>
+            <ObjectProperty IRI="#hasRank"/>
+            <Class IRI="#Rank"/>
         </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
@@ -713,94 +538,12 @@
         <Class IRI="#ShadowCores"/>
     </DisjointClasses>
     <ClassAssertion>
-        <ObjectExactCardinality cardinality="1">
-            <ObjectProperty IRI="#hasRank"/>
-            <Class IRI="#Divine"/>
-        </ObjectExactCardinality>
-        <NamedIndividual IRI="#ChildrenOfShadow"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="#Weapon"/>
         <NamedIndividual IRI="#MindSword"/>
     </ClassAssertion>
     <ClassAssertion>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasEnchantment"/>
-            <ObjectOneOf>
-                <NamedIndividual IRI="#Sharpness"/>
-            </ObjectOneOf>
-        </ObjectAllValuesFrom>
-        <NamedIndividual IRI="#MindSword"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectExactCardinality cardinality="5">
-            <ObjectProperty IRI="#hasCore"/>
-            <Class IRI="#SoulCores"/>
-        </ObjectExactCardinality>
-        <NamedIndividual IRI="#Saint_Ech"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="#Creature"/>
         <NamedIndividual IRI="#StoneGolem"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasEnchantment"/>
-            <ObjectOneOf>
-                <NamedIndividual IRI="#StoneWall"/>
-            </ObjectOneOf>
-        </ObjectAllValuesFrom>
-        <NamedIndividual IRI="#StoneGolem"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectExactCardinality cardinality="1">
-            <ObjectProperty IRI="#hasCore"/>
-            <Class IRI="#SoulCores"/>
-        </ObjectExactCardinality>
-        <NamedIndividual IRI="#StoneGolem"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasAspect"/>
-            <ObjectOneOf>
-                <NamedIndividual IRI="#ChildrenOfShadow"/>
-            </ObjectOneOf>
-        </ObjectAllValuesFrom>
-        <NamedIndividual IRI="#Sunless"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasEnchantment"/>
-            <ObjectOneOf>
-                <NamedIndividual IRI="#FireKeeper"/>
-                <NamedIndividual IRI="#Fly"/>
-                <NamedIndividual IRI="#ShadowStep"/>
-            </ObjectOneOf>
-        </ObjectAllValuesFrom>
-        <NamedIndividual IRI="#Sunless"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasFlaw"/>
-            <ObjectOneOf>
-                <NamedIndividual IRI="#TruthTolder"/>
-            </ObjectOneOf>
-        </ObjectAllValuesFrom>
-        <NamedIndividual IRI="#Sunless"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectExactCardinality cardinality="1">
-            <ObjectProperty IRI="#hasCore"/>
-            <Class IRI="#ShadowCores"/>
-        </ObjectExactCardinality>
-        <NamedIndividual IRI="#Sunless"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectExactCardinality cardinality="1">
-            <ObjectProperty IRI="#hasCore"/>
-            <Class IRI="#SoulCores"/>
-        </ObjectExactCardinality>
-        <NamedIndividual IRI="#Sunless"/>
     </ClassAssertion>
     <DifferentIndividuals>
         <NamedIndividual IRI="#ChildrenOfShadow"/>
@@ -875,6 +618,41 @@
         <NamedIndividual IRI="#Sunless"/>
         <NamedIndividual IRI="#Saint_Ech"/>
     </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#enchantmentCount"/>
+        <NamedIndividual IRI="#ChildrenOfShadow"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#enchantmentCount"/>
+        <NamedIndividual IRI="#MindSword"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#coreCount"/>
+        <NamedIndividual IRI="#Saint_Ech"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#coreCount"/>
+        <NamedIndividual IRI="#StoneGolem"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#enchantmentCount"/>
+        <NamedIndividual IRI="#StoneGolem"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#coreCount"/>
+        <NamedIndividual IRI="#Sunless"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#enchantmentCount"/>
+        <NamedIndividual IRI="#Sunless"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasAspect"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
@@ -972,6 +750,26 @@
             <Class IRI="#Object"/>
         </ObjectUnionOf>
     </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#coreCount"/>
+        <Class IRI="#Entity"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#enchantmentCount"/>
+        <ObjectUnionOf>
+            <Class IRI="#Aspect"/>
+            <Class IRI="#Entity"/>
+            <Class IRI="#Object"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#coreCount"/>
+        <Datatype abbreviatedIRI="xsd:positiveInteger"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#enchantmentCount"/>
+        <Datatype abbreviatedIRI="xsd:nonNegativeInteger"/>
+    </DataPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Alterable</IRI>
@@ -1000,7 +798,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
         <IRI>#Awakened_Cor</IRI>
-        <Literal>Thing with this rank must have 2 Enchantments.</Literal>
+        <Literal>Thing with this rank typically has 2 Enchantments.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
@@ -1015,7 +813,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
         <IRI>#Corrupted</IRI>
-        <Literal>Thing with this rank must have 4 Enchantments.</Literal>
+        <Literal>Thing with this rank typically has 4 Enchantments.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1030,7 +828,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
         <IRI>#Cursed</IRI>
-        <Literal>Thing with this rank must have 6 Enchantments.</Literal>
+        <Literal>Thing with this rank typically has 6 Enchantments.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
@@ -1045,7 +843,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
         <IRI>#Dormant_Cor</IRI>
-        <Literal>Thing with this rank must have 1 Enchantment.</Literal>
+        <Literal>Thing with this rank typically has 1 Enchantment.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
@@ -1075,7 +873,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
         <IRI>#Fallen</IRI>
-        <Literal>Thing with this rank must have 3 Enchantments.</Literal>
+        <Literal>Thing with this rank typically has 3 Enchantments.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1085,7 +883,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
         <IRI>#Great</IRI>
-        <Literal>Thing with this rank must have 5 Enchantments.</Literal>
+        <Literal>Thing with this rank typically has 5 Enchantments.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
@@ -1125,7 +923,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
         <IRI>#Mundane</IRI>
-        <Literal>Thing with this rank must have 0 Enchantments.</Literal>
+        <Literal>Thing with this rank typically has 0 Enchantments.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1160,7 +958,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
         <IRI>#Unholy</IRI>
-        <Literal>Thing with this rank must have 7 Enchantments.</Literal>
+        <Literal>Thing with this rank typically has 7 Enchantments.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1171,6 +969,16 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Weapon</IRI>
         <Literal>Weapons are object used to fight in combat.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#coreCount</IRI>
+        <Literal>Stores the number of soul cores an entity has. Used to determine class classification.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#enchantmentCount</IRI>
+        <Literal>Stores the number of enchantments an entity, object, or aspect has. Used to determine rank classification.</Literal>
     </AnnotationAssertion>
 </Ontology>
 
