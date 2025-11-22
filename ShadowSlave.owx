@@ -202,45 +202,101 @@
         <NamedIndividual IRI="#TruthTolder"/>
     </Declaration>
     <EquivalentClasses>
-        <Class IRI="#Awakened_Asc"/>
+        <Class IRI="#Awakened_Cor"/>
         <DataHasValue>
             <DataProperty IRI="#enchantmentCount"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
         </DataHasValue>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="#Divine"/>
+        <Class IRI="#Beast"/>
         <DataHasValue>
-            <DataProperty IRI="#enchantmentCount"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">7</Literal>
-        </DataHasValue>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#Dormant_Asc"/>
-        <DataHasValue>
-            <DataProperty IRI="#enchantmentCount"/>
+            <DataProperty IRI="#coreCount"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
         </DataHasValue>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="#Sacred"/>
+        <Class IRI="#Corrupted"/>
+        <DataHasValue>
+            <DataProperty IRI="#enchantmentCount"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+        </DataHasValue>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Cursed"/>
         <DataHasValue>
             <DataProperty IRI="#enchantmentCount"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">6</Literal>
         </DataHasValue>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="#Supreme"/>
+        <Class IRI="#Demon"/>
+        <DataHasValue>
+            <DataProperty IRI="#coreCount"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+        </DataHasValue>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Devil"/>
+        <DataHasValue>
+            <DataProperty IRI="#coreCount"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+        </DataHasValue>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Dormant_Cor"/>
+        <DataHasValue>
+            <DataProperty IRI="#enchantmentCount"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+        </DataHasValue>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Fallen"/>
+        <DataHasValue>
+            <DataProperty IRI="#enchantmentCount"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+        </DataHasValue>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Great"/>
         <DataHasValue>
             <DataProperty IRI="#enchantmentCount"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
         </DataHasValue>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="#Transcendent"/>
+        <Class IRI="#Monster"/>
+        <DataHasValue>
+            <DataProperty IRI="#coreCount"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+        </DataHasValue>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Terror"/>
+        <DataHasValue>
+            <DataProperty IRI="#coreCount"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">6</Literal>
+        </DataHasValue>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Titan"/>
+        <DataHasValue>
+            <DataProperty IRI="#coreCount"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">7</Literal>
+        </DataHasValue>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Tyrant"/>
+        <DataHasValue>
+            <DataProperty IRI="#coreCount"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+        </DataHasValue>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Unholy"/>
         <DataHasValue>
             <DataProperty IRI="#enchantmentCount"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">7</Literal>
         </DataHasValue>
     </EquivalentClasses>
     <SubClassOf>
